@@ -9,4 +9,4 @@ No treinamento mobile foi realizado automação de teste usando a biblioteca App
 usando apk com interface gráfica, todos os teste realizados com sucesso.
 
 
-Para ver os codigos gerados, basta entrar na pasta Qa ninja neste Github
+Para ver os codigos gerados, basta entrar na pasta: web (web automação)e twp (Mobile automação)
