@@ -9,4 +9,4 @@ No treinamento mobile foi realizado automação de teste usando a biblioteca App
 usando apk com interface gráfica, todos os teste realizados com sucesso.
 
 
-Para ver os codigos gerados, basta entrar na pasta: robot (web automação) e twp (Mobile automação)
+Para ver os codigos gerados, basta entrar na pasta: robot (Web automação) e twp (Mobile automação)
