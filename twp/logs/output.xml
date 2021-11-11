@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.1 (Python 3.9.5 on win32)" generated="20211021 17:56:01.759" rpa="false" schemaversion="2">
-<suite id="s1" name="Drag-And-Drop" source="C:\qaninja\twp\tests\drag-and-drop.robot">
-<test id="s1-t1" name="Deve mover o Hulk para o topo da lista">
+<robot generator="Robot 4.1.1 (Python 3.9.5 on win32)" generated="20211111 11:11:48.626" rpa="false" schemaversion="2">
+<suite id="s1" name="Spinner" source="C:\qaninja\twp\tests\spinner.robot">
+<test id="s1-t1" name="Deve selecionar um perfil QA">
 <kw name="Open Session" library="resource" type="SETUP">
 <kw name="Set Appium Timeout" library="AppiumLibrary">
 <arg>7</arg>
 <doc>Sets the timeout in seconds used by various keywords.</doc>
-<status status="PASS" starttime="20211021 17:56:02.011" endtime="20211021 17:56:02.012"/>
+<status status="PASS" starttime="20211111 11:11:48.886" endtime="20211111 11:11:48.886"/>
 </kw>
 <kw name="Open Application" library="AppiumLibrary">
 <arg>http://localhost:4723/wd/hub</arg>
@@ -21,97 +21,141 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | *Option*            | *Man.* | *Description*     |
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |</doc>
-<status status="PASS" starttime="20211021 17:56:02.012" endtime="20211021 17:56:16.495"/>
+<status status="PASS" starttime="20211111 11:11:48.886" endtime="20211111 11:12:05.475"/>
 </kw>
 <kw name="Get Started" library="helpers">
 <kw name="Wait Until Page Contains" library="AppiumLibrary">
 <arg>${BTN_COMEÇAR}</arg>
 <doc>Waits until `text` appears on current page.</doc>
-<status status="PASS" starttime="20211021 17:56:16.496" endtime="20211021 17:56:20.419"/>
+<status status="PASS" starttime="20211111 11:12:05.476" endtime="20211111 11:12:09.277"/>
 </kw>
 <kw name="Click Text" library="AppiumLibrary">
 <arg>${BTN_COMEÇAR}</arg>
 <doc>Click text identified by ``text``.</doc>
-<status status="PASS" starttime="20211021 17:56:20.419" endtime="20211021 17:56:20.582"/>
+<status status="PASS" starttime="20211111 11:12:09.277" endtime="20211111 11:12:09.449"/>
 </kw>
-<status status="PASS" starttime="20211021 17:56:16.495" endtime="20211021 17:56:20.582"/>
+<status status="PASS" starttime="20211111 11:12:05.475" endtime="20211111 11:12:09.449"/>
 </kw>
-<status status="PASS" starttime="20211021 17:56:02.011" endtime="20211021 17:56:20.583"/>
+<status status="PASS" starttime="20211111 11:11:48.885" endtime="20211111 11:12:09.449"/>
 </kw>
-<kw name="Go To Avengers List" library="helpers">
+<kw name="Go To Signup Form" library="helpers">
 <kw name="Open Nav" library="helpers">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${HAMBURGUER}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" starttime="20211021 17:56:20.584" endtime="20211021 17:56:21.826"/>
+<status status="PASS" starttime="20211111 11:12:09.451" endtime="20211111 11:12:10.697"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${HAMBURGUER}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20211021 17:56:21.828" level="INFO">Clicking element 'xpath=//android.widget.ImageButton[@content-desc="Open navigation drawer"]'.</msg>
-<status status="PASS" starttime="20211021 17:56:21.826" endtime="20211021 17:56:21.906"/>
+<msg timestamp="20211111 11:12:10.700" level="INFO">Clicking element 'xpath=//android.widget.ImageButton[@content-desc="Open navigation drawer"]'.</msg>
+<status status="PASS" starttime="20211111 11:12:10.697" endtime="20211111 11:12:10.799"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${NAV_TELA_LATERAL}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" starttime="20211021 17:56:21.907" endtime="20211021 17:56:22.919"/>
+<status status="PASS" starttime="20211111 11:12:10.799" endtime="20211111 11:12:11.839"/>
 </kw>
-<status status="PASS" starttime="20211021 17:56:20.583" endtime="20211021 17:56:22.919"/>
-</kw>
-<kw name="Click Text" library="AppiumLibrary">
-<arg>AVENGERS</arg>
-<doc>Click text identified by ``text``.</doc>
-<status status="PASS" starttime="20211021 17:56:22.919" endtime="20211021 17:56:23.022"/>
-</kw>
-<kw name="Wait Until Page Contains" library="AppiumLibrary">
-<arg>AVENGERS</arg>
-<doc>Waits until `text` appears on current page.</doc>
-<status status="PASS" starttime="20211021 17:56:23.023" endtime="20211021 17:56:23.497"/>
+<status status="PASS" starttime="20211111 11:12:09.450" endtime="20211111 11:12:11.840"/>
 </kw>
 <kw name="Click Text" library="AppiumLibrary">
-<arg>LISTA</arg>
+<arg>FORMS</arg>
 <doc>Click text identified by ``text``.</doc>
-<status status="PASS" starttime="20211021 17:56:23.497" endtime="20211021 17:56:24.040"/>
+<status status="PASS" starttime="20211111 11:12:11.840" endtime="20211111 11:12:11.989"/>
 </kw>
 <kw name="Wait Until Page Contains" library="AppiumLibrary">
-<arg>LISTA</arg>
+<arg>FORMS</arg>
 <doc>Waits until `text` appears on current page.</doc>
-<status status="PASS" starttime="20211021 17:56:24.040" endtime="20211021 17:56:24.471"/>
+<status status="PASS" starttime="20211111 11:12:11.989" endtime="20211111 11:12:12.450"/>
 </kw>
-<status status="PASS" starttime="20211021 17:56:20.583" endtime="20211021 17:56:24.471"/>
+<kw name="Click Text" library="AppiumLibrary">
+<arg>CADASTRO</arg>
+<doc>Click text identified by ``text``.</doc>
+<status status="PASS" starttime="20211111 11:12:12.450" endtime="20211111 11:12:12.988"/>
 </kw>
-<kw name="Drag and Drop" library="extend">
-<arg>io.qaninja.android.twp:id/drag_handle</arg>
-<arg>3</arg>
-<arg>0</arg>
-<status status="PASS" starttime="20211021 17:56:24.471" endtime="20211021 17:56:36.138"/>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Bem-vindo, crie sua conta.</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20211111 11:12:12.988" endtime="20211111 11:12:14.135"/>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211021 17:56:41.139" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20211021 17:56:36.138" endtime="20211021 17:56:41.139"/>
+<status status="PASS" starttime="20211111 11:12:09.450" endtime="20211111 11:12:14.136"/>
+</kw>
+<kw name="Choice Job">
+<arg>QA</arg>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${SPINNER}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211111 11:12:14.139" level="INFO">Clicking element 'id=io.qaninja.android.twp:id/spinnerJob'.</msg>
+<status status="PASS" starttime="20211111 11:12:14.137" endtime="20211111 11:12:14.194"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${LIST_OPTIONS}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211111 11:12:14.194" endtime="20211111 11:12:15.162"/>
+</kw>
+<kw name="Click Text" library="AppiumLibrary">
+<arg>${alvo}</arg>
+<doc>Click text identified by ``text``.</doc>
+<status status="PASS" starttime="20211111 11:12:15.162" endtime="20211111 11:12:15.872"/>
+</kw>
+<status status="PASS" starttime="20211111 11:12:14.136" endtime="20211111 11:12:15.872"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>id=io.qaninja.android.twp:id/etUsername</arg>
+<arg>${NAME}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20211111 11:12:15.875" level="INFO">Typing text 'Robson' into text field 'id=io.qaninja.android.twp:id/etUsername'</msg>
+<status status="PASS" starttime="20211111 11:12:15.873" endtime="20211111 11:12:16.452"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>id=io.qaninja.android.twp:id/etEmail</arg>
+<arg>${EMAIL_FAKER}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20211111 11:12:16.454" level="INFO">Typing text 'robsonaso@hotmail.com' into text field 'id=io.qaninja.android.twp:id/etEmail'</msg>
+<status status="PASS" starttime="20211111 11:12:16.452" endtime="20211111 11:12:17.003"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>id=io.qaninja.android.twp:id/etPassword</arg>
+<arg>${SENHA}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20211111 11:12:17.007" level="INFO">Typing text '123456789' into text field 'id=io.qaninja.android.twp:id/etPassword'</msg>
+<status status="PASS" starttime="20211111 11:12:17.005" endtime="20211111 11:12:18.041"/>
+</kw>
+<kw name="Click Button" library="AppiumLibrary">
+<arg>CADASTRAR</arg>
+<doc>Click button</doc>
+<msg timestamp="20211111 11:12:18.573" level="INFO">'QA NINJA'.</msg>
+<msg timestamp="20211111 11:12:18.610" level="INFO">'CADASTRAR'.</msg>
+<msg timestamp="20211111 11:12:18.645" level="INFO">Clicking element 'CADASTRAR'.</msg>
+<status status="PASS" starttime="20211111 11:12:18.042" endtime="20211111 11:12:18.678"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Tudo certo, recebemos seus dados!</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20211111 11:12:18.678" endtime="20211111 11:12:18.898"/>
 </kw>
 <kw name="Close Session" library="resource" type="TEARDOWN">
 <kw name="Close Application" library="AppiumLibrary">
 <doc>Closes the current application and also close webdriver session.</doc>
-<status status="PASS" starttime="20211021 17:56:41.140" endtime="20211021 17:56:42.297"/>
+<status status="PASS" starttime="20211111 11:12:18.899" endtime="20211111 11:12:20.233"/>
 </kw>
-<status status="PASS" starttime="20211021 17:56:41.140" endtime="20211021 17:56:42.298"/>
+<status status="PASS" starttime="20211111 11:12:18.899" endtime="20211111 11:12:20.233"/>
 </kw>
-<status status="PASS" starttime="20211021 17:56:02.010" endtime="20211021 17:56:42.298"/>
+<tag>qa</tag>
+<status status="PASS" starttime="20211111 11:11:48.885" endtime="20211111 11:12:20.239"/>
 </test>
-<doc>aula de drop and drag movendo listas usando uma programação em Python pois nao existe uma Keyword para esta função tem que passar o locator puro posição que esta mais a posição que vc que ele fique</doc>
-<status status="PASS" starttime="20211021 17:56:01.761" endtime="20211021 17:56:42.303"/>
+<doc>aula de spinner</doc>
+<status status="PASS" starttime="20211111 11:11:48.628" endtime="20211111 11:12:20.241"/>
 </suite>
 <statistics>
 <total>
 <stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
+<stat pass="1" fail="0" skip="0">qa</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Drag-And-Drop">Drag-And-Drop</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Spinner">Spinner</stat>
 </suite>
 </statistics>
 <errors>
